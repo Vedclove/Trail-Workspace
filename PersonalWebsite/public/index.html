@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Minimal Portfolio</title>
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="container">
+                <a class="brand" href="#">Your Name</a>
+                <div class="links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero container">
+                <h1>Hi, I’m <span class="accent">Your Name</span></h1>
+                <p class="subtitle">I build simple, fast web experiences.</p>
+                <div class="actions">
+                    <a class="btn primary" href="#projects">View Projects</a>
+                    <a class="btn" href="#contact">Get in Touch</a>
+                </div>
+            </section>
+
+            <section id="about" class="section container">
+                <h2>About</h2>
+                <p>
+                    I’m a developer focused on clean UI and solid engineering.
+                    This minimal portfolio is a quick starting point you can extend.
+                </p>
+            </section>
+
+            <section id="projects" class="section container">
+                <h2>Projects</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>Project One</h3>
+                        <p>A short description of something cool you built.</p>
+                        <a class="link" href="#">View</a>
+                    </article>
+                    <article class="card">
+                        <h3>Project Two</h3>
+                        <p>Another small highlight worth showing.</p>
+                        <a class="link" href="#">View</a>
+                    </article>
+                    <article class="card">
+                        <h3>Project Three</h3>
+                        <p>Keep it brief; details can live in the repo.</p>
+                        <a class="link" href="#">View</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section container">
+                <h2>Contact</h2>
+                <p>
+                    Email: <a class="link" href="mailto:you@example.com">you@example.com</a>
+                </p>
+                <p>
+                    GitHub: <a class="link" href="https://github.com/yourname" target="_blank" rel="noreferrer">@yourname</a>
+                </p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <small>© <span id="year"></span> Your Name</small>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear().toString();
+        </script>
+    </body>
+    </html>
